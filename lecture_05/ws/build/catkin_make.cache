@@ -1,0 +1,2 @@
+me495_tf
+-DCATKIN_DEVEL_PREFIX=/home/alex/Git_Stuff/495/lecture_05/ws/devel -DCMAKE_INSTALL_PREFIX=/home/alex/Git_Stuff/495/lecture_05/ws/install -G Unix Makefiles

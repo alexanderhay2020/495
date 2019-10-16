@@ -1,0 +1,8 @@
+prefix=/home/alex/Git_Stuff/495/lecture_05/ws/devel
+
+Name: me495_tf
+Description: Description of me495_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alex/Git_Stuff/495/lecture_05/ws/devel/lib 
+Requires: 

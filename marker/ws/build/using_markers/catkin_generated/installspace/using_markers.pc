@@ -1,0 +1,8 @@
+prefix=/home/alex/Git_Stuff/495/marker/ws/install
+
+Name: using_markers
+Description: Description of using_markers
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alex/Git_Stuff/495/marker/ws/install/lib 
+Requires: 
