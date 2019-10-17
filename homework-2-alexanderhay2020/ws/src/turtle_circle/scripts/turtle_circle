@@ -1,3 +1,20 @@
 #!/usr/bin/env python
 
 # This is the turtle_circle node
+
+from turtle_circle.msg import exampleMsg # pulls all message files from package turtle_circle, imports example.msg (but without the .msg)
+
+from turtle_circle.srv import exampleSrv VelReturn #gives service whatever the request is, in return gets return value
+
+
+# squares are topics, ovals are node
+
+# do this in d
+self.sub=rospy.Subscriber('turtle_vel', TurtleVel, self.callback) # subcribes to turtle_vel topic for TurtleVel data, calls callback function and returns valueself.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+self.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+
+def main():
+    """ The main() function. """
+    rospy.init_node('turtle_interpret', anonymous=True, log_level=rospy.DEBUG)
+    turtle_interpret()
+    rospy.spin()
