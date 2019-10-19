@@ -1,0 +1,66 @@
+#!/usr/bin/env python
+"""
+Translates between linear/angular velocities and twists
+
+PUBLISHERS:
+  + cmd_vel (geometry_msgs/Twist) ~ the velocity of the turtle
+
+SUBSCRIBES:
+  + turtle_vel (turtle_control/TurtleVel) ~ velocity specified as linear/angular
+
+SERVICES:
+  + vel_translate (turtle_control/VelTranslate) - translate a Twist into a TurtleVel
+
+"""
+from __future__ import division
+import rospy
+from geometry_msgs.msg import Twist, Vector3
+from turtle_control.msg import TurtleVel
+from turtle_control.srv import VelTranslate, VelTranslateResponse
+
+class TurtleInterpret(object):
+    """ Manages the transformation of TurtleVel and Twist messages """
+
+    def __init__(self):
+        rospy.init_node("turtle_interpret")
+        rospy.Subscriber("turtle_vel", TurtleVel, self.to_twist)
+        self._pub = rospy.Publisher('cmd_vel', Twist, queue_size = 10)
+        self._srv = rospy.Service("vel_translate", VelTranslate, self.from_twist)
+
+    def to_twist(self, tvel):
+        """ Publish the Twist equivalent of the 2d velocity specified
+
+            Args:
+              tvel (TurtleVel): the 2 dimensional velocity
+        """
+        rospy.logdebug("input vel" + str(tvel))
+        self._pub.publish(
+            Twist(linear = Vector3(x = tvel.linear, y = 0, z = 0),
+                  angular = Vector3(x = 0, y = 0, z = tvel.angular)))
+
+    def from_twist(self, req):
+        """ Convert a Twist to its equivalent TurtleVel
+
+            Args:
+              twist (Twist): the twist to convert
+
+            Returns:
+                VelTranslateResponse containing the velocity
+        """
+        if req.twist.linear.y != 0.0 or req.twist.linear.z != 0.0 \
+           or req.twist.angular.x != 0.0 or req.twist.linear.y != 0.0:
+            return None
+        else:
+            return VelTranslateResponse(
+                TurtleVel(linear = req.twist.linear.x,
+                          angular = req.twist.angular.z))
+
+def main():
+    TurtleInterpret() 
+    rospy.spin()
+
+if __name__ == "__main__":
+    try:
+        main()
+    except rospy.ROSInterruptException:
+        pass

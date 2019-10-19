@@ -1,0 +1,6 @@
+- git:
+    local-name: crazy_turtle
+    uri: https://github.com/m-elwin/crazy_turtle
+- git:
+    local-name: turtle_package
+    uri: git@github.com:ME495-EmbeddedSystems/homework-1-m-elwin.git

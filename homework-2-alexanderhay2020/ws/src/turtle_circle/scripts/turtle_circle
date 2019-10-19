@@ -5,15 +5,37 @@
 
 
 """
-from turtle_circle.msg import exampleMsg # pulls all message files from package turtle_circle, imports example.msg (but without the .msg)
+#from turtle_circle.msg import exampleMsg # pulls all message files from package turtle_circle, imports example.msg (but without the .msg)
+#from turtle_circle.srv import exampleSrv VelReturn #gives service whatever the request is, in return gets return value
 
-from turtle_circle.srv import exampleSrv VelReturn #gives service whatever the request is, in return gets return value
+import rospy
+from geometry_msgs import Twist, Vector3
+from turtle_control.msg import Pose, TurtleVel
+from turtlesim.srv import TeleportAbsolute, Spawn, SetPen
+#from turtle_control.msg import TurtleVel
 
 # squares are topics, ovals are node
 
-# do this in d
-self.sub=rospy.Subscriber('turtle_vel', TurtleVel, self.callback) # subcribes to turtle_vel topic for TurtleVel data, calls callback function and returns valueself.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
-self.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+class TurtleInterpret(object):
+    """
+    text
+    """
+
+    def __init__(self):
+        """
+        text
+        """
+        rospy.init_node('turtle_interpret', anonymous=True, log_level=rospy.DEBUG)
+        rospy.Subscriber("turtle_vel",TurtleVel,self.to_twist) # subcribes to turtle_vel topic for TurtleVel data, runs callback function to_twist and returns valueself.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+        #self.sub=rospy.Subscriber('turtle_vel', TurtleVel, self.callback) # subcribes to turtle_vel topic for TurtleVel data, calls callback function and returns valueself.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+        self.pub=rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10) # publishes Twist data on cmd_vel topic
+        self.srv=ropsy.Service("vel_translate",velTranslate,self.from_twist)
+
+    def to_twist(self,tvel):
+        ropsy.loginfo("input vel" + str(tvel))
+        self.pub.publish(
+            #Twist(linear = Vector3(x = )
+        )
 
 def main():
 
