@@ -7,8 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alex/Git_Stuff/495/HW1_Solution/ws/devel:$CMAKE_PREFIX_PATH"
-export PATH="/opt/ros/melodic/bin:/home/alex/.local/bin:/home/alex/anaconda2/bin:/home/alex/gems/bin:/home/alex/anaconda2/bin:/home/alex/gems/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PKG_CONFIG_PATH="/home/alex/Git_Stuff/495/HW1_Solution/ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/alex/Git_Stuff/495/HW1_Solution/ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alex/Git_Stuff/495/HW1_Solution/ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/alex/Git_Stuff/495/HW1_Solution/ws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/home/alex/Git_Stuff/495/HW1_Solution/ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"

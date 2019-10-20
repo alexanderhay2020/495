@@ -1,0 +1,8 @@
+prefix=/home/alex/Git_Stuff/495/HW1/ws/devel
+
+Name: turtle_control
+Description: Description of turtle_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alex/Git_Stuff/495/HW1/ws/devel/lib 
+Requires: 

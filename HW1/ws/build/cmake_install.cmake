@@ -131,6 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/alex/Git_Stuff/495/HW1/ws/build/gtest/cmake_install.cmake")
+  include("/home/alex/Git_Stuff/495/HW1/ws/build/turtle_control/cmake_install.cmake")
+  include("/home/alex/Git_Stuff/495/HW1/ws/build/crazy_turtle/cmake_install.cmake")
 
 endif()
 

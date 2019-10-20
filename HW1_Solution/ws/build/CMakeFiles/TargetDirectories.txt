@@ -35,3 +35,11 @@
 /home/alex/Git_Stuff/495/HW1_Solution/ws/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/alex/Git_Stuff/495/HW1_Solution/ws/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/alex/Git_Stuff/495/HW1_Solution/ws/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/install/strip.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/install/local.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/test.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/list_install_components.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/edit_cache.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/_catkin_empty_exported_target.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/rebuild_cache.dir
+/home/alex/Git_Stuff/495/HW1_Solution/ws/build/turtle_control/CMakeFiles/install.dir

@@ -1,9 +1,0 @@
-# Service allows you to perform changes to service/node without changing code
-
-# Request
-geometry_msgs/Twist Twist # message_type whatever_you're_calling_it (twist will contain whatever is in the message type)
---- # these dashes are needed
-
-# Response
-TurtleVel VelReturn # message_type, whatever_you're_calling_it (twist will contain whatever is in the message type)
-# outputs to terminal

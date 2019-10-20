@@ -1,0 +1,8 @@
+prefix=/home/alex/Git_Stuff/495/HW1/ws/install
+
+Name: crazy_turtle
+Description: Description of crazy_turtle
+Version: 0.0.0
+Cflags: -I/home/alex/Git_Stuff/495/HW1/ws/install/include
+Libs: -L/home/alex/Git_Stuff/495/HW1/ws/install/lib 
+Requires: message_runtime turtlesim

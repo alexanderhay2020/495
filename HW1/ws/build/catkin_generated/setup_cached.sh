@@ -7,8 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alex/Git_Stuff/495/HW1/ws/devel:$CMAKE_PREFIX_PATH"
-export PATH="/opt/ros/melodic/bin:/home/alex/anaconda2/bin:/home/alex/gems/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PWD="/home/alex/Git_Stuff/495/HW1/ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alex/Git_Stuff/495/HW1/ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/alex/Git_Stuff/495/HW1/ws/src:$ROS_PACKAGE_PATH"
