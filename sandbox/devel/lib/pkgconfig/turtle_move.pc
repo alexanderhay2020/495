@@ -1,0 +1,8 @@
+prefix=/home/alex/Git_Stuff/495/sandbox/devel
+
+Name: turtle_move
+Description: Description of turtle_move
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alex/Git_Stuff/495/sandbox/devel/lib 
+Requires: 

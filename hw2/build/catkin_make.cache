@@ -1,0 +1,2 @@
+hw2/turtle_circle
+-DCATKIN_DEVEL_PREFIX=/home/alex/Git_Stuff/495/hw2/devel -DCMAKE_INSTALL_PREFIX=/home/alex/Git_Stuff/495/hw2/install -G Unix Makefiles

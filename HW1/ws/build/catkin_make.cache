@@ -1,2 +1,0 @@
-crazy_turtle:turtle_control
--DCATKIN_DEVEL_PREFIX=/home/alex/Git_Stuff/495/HW1/ws/devel -DCMAKE_INSTALL_PREFIX=/home/alex/Git_Stuff/495/HW1/ws/install -G Unix Makefiles
